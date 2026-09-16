@@ -11,7 +11,8 @@ module.exports = defineConfig([
     rules: {
       "semi": [2, "never"],
       "comma-dangle": [2, "never"],
-      "@typescript-eslint/explicit-function-return-type": "error"
+      "@typescript-eslint/explicit-function-return-type": "error",
+      "eol-last": ["error", "always"],
     }
   }
 ])
