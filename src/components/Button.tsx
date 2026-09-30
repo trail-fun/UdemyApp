@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { Text, TouchableOpacity, StyleSheet } from 'react-native'
 
 interface Props {
     label: string
@@ -8,9 +8,9 @@ interface Props {
 const Button = (props: Props): React.JSX.Element => {
     const { label } = props
     return(
-        <View style={styles.button}>
+        <TouchableOpacity style={styles.button}>
             <Text style={styles.buttonLabel}>{label}</Text>
-        </View>
+        </TouchableOpacity>
     )
 }
 
